@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('prescription_start_date', models.DateField(auto_now_add=True)),
                 ('prescription_end_date', models.DateField()),
-                ('presscription_status', models.CharField(choices=[('valide', 'actif'), ('en_attente', 'en_attente'), ('suppr', 'suppr')], default='valide', max_length=16)),
+                ('presscription_status', models.CharField(choices=[('valide', 'valide'), ('en_attente', 'en_attente'), ('suppr', 'suppr')], default='valide', max_length=16)),
                 ('commentaire', models.TextField(blank=True, null=True)),
                 ('medication', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='prescriptions', to='medical.medication')),
                 ('patient', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='prescriptions', to='medical.patient')),
