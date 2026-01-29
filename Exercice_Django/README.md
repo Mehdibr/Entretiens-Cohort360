@@ -70,7 +70,7 @@ python manage.py seed_demo --patients 2500 --medications 150 --prescriptions 30
 python manage.py runserver
 ```
 
-Ouvrir http://127.0.0.1:8000/Patient et http://127.0.0.1:8000/Medication
+Ouvrir http://127.0.0.1:8000/Patient et http://127.0.0.1:8000/Medication et http://127.0.0.1:8000/Prescription
 
 Endpoints
 ---------

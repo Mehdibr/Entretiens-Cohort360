@@ -95,7 +95,7 @@ class Command(BaseCommand):
             start_date = random_date(2024, 2025)
             end_date = start_date + timedelta(days=random.randint(1, 30))
             presscription_status = random.choices(
-                [Prescription.STATUS_ACTIF, Prescription.STATUS_SUPPR, Prescription.STATUS_ATTENTE],
+                [Prescription.STATUS_VALID, Prescription.STATUS_SUPPR, Prescription.STATUS_ATTENTE],
                 weights=[0.5, 0.2, 0.3]
             )[0]
             commentaire = "Prescription test."
